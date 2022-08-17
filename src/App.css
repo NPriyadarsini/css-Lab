@@ -1,0 +1,36 @@
+.box {
+	/* border-radius: 20px; */
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+.b1 {
+	background: #f0652b;
+	top: 20px;
+  left: 40px;
+}
+.b2 {
+	background: #8cbd00;
+	top: 20px;
+	left:145px;
+}
+.b3 {
+	background: #00aee9;
+	top: 125px;
+	left: 40px;
+}
+.b4 {
+	background: #f7bd00;
+	top: 125px;
+	left: 145px;
+}
+
+.App {
+	text-align: center;
+	background:rgb(199, 226, 181);
+}
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
