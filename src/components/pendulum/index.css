@@ -1,10 +1,12 @@
 .pendulum {
 	position: absolute;
-	background: lightcyan;
+	background: white;
 	width: 100px;
 	height: 200px;
 	top: 20%;
 	left: 40%;
+	animation: pendulum infinite 2s ease-in-out alternate;
+	transform-origin: top;
 }
 .container {
 	height: 100%;
@@ -26,4 +28,12 @@
 	left: 10%;
 	border-radius: 50%;
 	bottom: 0%;
+}
+@keyframes pendulum {
+	from {
+		transform: rotate(35deg);
+	}
+	to {
+		transform: rotate(-35deg);
+	}
 }
