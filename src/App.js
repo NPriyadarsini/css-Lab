@@ -1,11 +1,12 @@
 import { React } from 'react';
-// import Logo from './components/logo';
-import Pendulum from './components/pendulum';
 import './App.css';
+import Display from './components/Display';
+import SelectBox from './components/selectBox';
 
-const App = () =>
+const App = (context) =>
 	<div className="App">
-		<Pendulum/>
+		<SelectBox{ ...context }/>
+		<Display{ ...context }/>
 	</div>
 	;
 
