@@ -8,7 +8,7 @@
 	width: 75%;
 }
 
-.colum-container {
+.column-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -31,3 +31,30 @@
 .blue {
 	background: lightskyblue;
 }
+@media (prefers-reduced-motion: no-preference) {
+	.column-container{
+			animation: column-containers-scale  infinite 6s ease-in-out;
+	}
+	.row-container{
+		animation: row-containers-scale  infinite 6s ease-in-out;
+ }
+
+}
+@keyframes row-containers-scale {
+	from {
+		transform: scaleX(1);
+	}
+	to {
+		transform: scaleX(0.2);
+	}
+}
+@keyframes column-containers-scale {
+	from {
+		transform: scaleY(1);
+	}
+	to {
+		transform: scaleY(0.2);
+	}
+}
+
+
