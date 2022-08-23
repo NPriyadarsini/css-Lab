@@ -1,10 +1,12 @@
 import { React } from 'react';
-import Logo from './logo';
-import Pendulum from './pendulum';
+import Logo from './Logo';
+import Pendulum from './Pendulum';
+import FlexBox from './FlexBox';
 
 const components = {
 	Logo,
 	Pendulum,
+	FlexBox,
 };
 
 const Display = (context) => {

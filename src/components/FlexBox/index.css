@@ -1,0 +1,33 @@
+.flex {
+	display: flex;
+}
+.row-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 75%;
+}
+
+.colum-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 100vh;
+}
+.color {
+	width: 200px;
+	min-height: 100px;
+	margin: 10px;
+	border: 1px solid;
+	transition: all 1000ms ease-in-out;
+}
+.red {
+	background: red;
+}
+.green {
+	background: green;
+}
+.blue {
+	background: lightskyblue;
+}
