@@ -10,10 +10,10 @@
 	height: 100%;
 	width: 100%;
 	position:center;
-	animation: container-size infinite 2s ease-in-out;
+	animation: container-size infinite 10s ease-in-out;
 }
 .square {
-	position: relative;
+	position: absolute;
 	width:20%;
 	height:40%;
 	background-color: rgb(110, 236, 116);
@@ -25,7 +25,7 @@
 	width: 5%;
 	height: 35%;
 	left: 40%;
-	top :0%
+	top :8%
 }
 .circle {
 	width: 20%;
@@ -39,10 +39,10 @@
 
 @keyframes pendulum {
 	from {
-		transform: rotate(45deg);
+		transform: rotate(35deg);
 	}
 	to {
-		transform: rotate(-45deg);
+		transform: rotate(-35deg);
 	}
 }
 @keyframes container-size {
