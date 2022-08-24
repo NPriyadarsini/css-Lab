@@ -31,6 +31,11 @@
 .blue {
 	background: lightskyblue;
 }
+#flex-select {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
 @media (prefers-reduced-motion: no-preference) {
 	.column-container{
 			animation: column-containers-scale  infinite 6s ease-in-out;

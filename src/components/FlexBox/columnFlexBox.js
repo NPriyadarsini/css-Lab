@@ -1,13 +1,14 @@
 import { React } from 'react';
+import context from '../../core/context';
 
-const RedStyle = () => ({
-	flexGrow: 1,
+const BlueStyle = () => ({
+	flexGrow: context.state.selectedFlex === 'blue' ? 1 : 0,
 });
 const GreenStyle = () => ({
-	flexGrow: 10,
+	flexGrow: context.state.selectedFlex === 'green' ? 1 : 0,
 });
-const BlueStyle = () => ({
-	flexGrow: 100,
+const RedStyle = () => ({
+	flexGrow: context.state.selectedFlex === 'red' ? 1 : 0,
 });
 
 const ColumnFlexBox = () =>

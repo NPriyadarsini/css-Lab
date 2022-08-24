@@ -1,13 +1,16 @@
 import { React } from 'react';
-const RedStyle = () => ({
-	flexGrow: 1,
+import context from '../../core/context';
+
+const BlueStyle = () => ({
+	flexGrow: context.state.selectedFlex === 'blue' ? 1 : 0,
 });
 const GreenStyle = () => ({
-	flexGrow: 10,
+	flexGrow: context.state.selectedFlex === 'green' ? 1 : 0,
 });
-const BlueStyle = () => ({
-	flexGrow: 100,
+const RedStyle = () => ({
+	flexGrow: context.state.selectedFlex === 'red' ? 1 : 0,
 });
+
 const RowFlexBox = () =>
 	<div className="row-container">
 		<div className="color red" style={ RedStyle() }/>
